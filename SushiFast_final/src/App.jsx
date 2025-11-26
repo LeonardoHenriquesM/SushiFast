@@ -1,24 +1,20 @@
 import { Routes, Route, Link } from 'react-router-dom'
-import Accueil from './pages/Accueil'
-import Menus from './pages/Menus'
-import DetailsMenu from './pages/DetailsMenu'
-import FiltresMenus from './pages/FiltresMenus'
+import Header from './composants/Header'
+import Footer from './composants/Footer'
+import Accueil from './composants/Accueil'
+import Menus from './composants/Menus'
+import FiltresMenus from './composants/FiltresMenus'
+import DetailsMenu from './composants/Detailsmenu'
 
 export default function App() {
   return (
-    <div>
-      <nav>
-        <Link to="/">Accueil</Link> | 
-        <Link to="/menus">Menus</Link> | 
-        <Link to="/filtres">Filtres</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/menus" element={<Menus />} />
-        <Route path="/menus/:id" element={<DetailsMenu />} />
-        <Route path="/filtres" element={<FiltresMenus />} />
-      </Routes>
-    </div>
+    <><Header />
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/menus" element={<Menus />} />
+          <Route path="/menus/:id" element={<DetailsMenu />} />
+          <Route path="/filtres" element={<FiltresMenus />} />
+        </Routes>
+    </>
   )
 }
