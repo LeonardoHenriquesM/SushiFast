@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { Link } from 'react-router-dom'
 import boxes from '../../public/boxes.json'
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 export default function Menus() {
