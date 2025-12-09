@@ -8,7 +8,8 @@ import DetailsMenu from './composants/Detailsmenu'
 
 export default function App() {
   return (
-    <><Header />
+    <>
+      <Header />
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/menus" element={<Menus />} />

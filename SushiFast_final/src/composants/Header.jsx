@@ -1,29 +1,59 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <Link className="navbar-brand" to="/">SushiFast</Link>
-    <ul className="navbar-nav mr-auto mt-4 mt-lg-0">
-      <li>
-        <Link className="nav-item" to="/">Accueil</Link>
-      </li>
-      <li>
-        <Link className="nav-item" to="/menus">Menus</Link>
-      </li>
-      <li >
-        <Link className="nav-item" to="/filtres">Filtres</Link>
-      </li>
-    </ul>
-    <form className="form-inline my-2 my-lg-0">
-      <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-  )
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+      <div className="container-fluid">
+        
+        {/* LOGO */}
+        <Link className="navbar-brand fw-bold fs-3" to="/">
+          🍣 SushiFast
+        </Link>
+
+        {/* BURGER */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* LINKS + SEARCH */}
+        <div className="collapse navbar-collapse" id="navbarContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Accueil</Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/menus">Menus</Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/filtres">Filtres</Link>
+            </li>
+          </ul>
+
+          {/* SEARCH BAR */}
+          <form className="d-flex">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Rechercher..."
+            />
+            <button className="btn btn-outline-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  );
 }

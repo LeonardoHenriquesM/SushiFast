@@ -16,11 +16,11 @@ export default function Accueil() {
           <div key={menu.id} className="col-md-4 mb-4">
             <div className="card h-100 shadow-sm">
               <img
-  src={`/${menu.image}.jpg`}  // <-- ici on ajoute le "/" et ".jpg"
-  className="card-img-top"
-  alt={menu.nom}
-  style={{ height: '200px', objectFit: 'cover' }}
-/>
+              src={`/${menu.image}.jpg`}  
+              className="card-img-top"
+              alt={menu.nom}
+              style={{ height: '200px', objectFit: 'cover' }}
+              />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{menu.nom}</h5>
                 <p className="card-text">{menu.pieces} pièces</p>
