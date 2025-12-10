@@ -26,8 +26,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;  /* pleine largeur */
-  height: 100vh; /* pleine hauteur */
+  width: 100vw;  
+  height: 100vh;
   background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
@@ -37,10 +37,26 @@
 }
 
 .lightbox-img {
-  width: 60vw;   /* 90% de la largeur de la fenêtre */
-  height: auto;  /* conserver les proportions */
-  max-height: 95vh; /* ne pas dépasser la hauteur de l'écran */
+  width: 60vw;   
+  height: auto; 
+  max-height: 95vh; 
   border-radius: 10px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
   object-fit: contain;
 }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  min-height: 73vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+
+
+

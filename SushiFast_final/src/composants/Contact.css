@@ -35,3 +35,7 @@
   transition: 0.3s;
 }
 
+#message {
+  color: #000;
+  background-color: #fff;
+}

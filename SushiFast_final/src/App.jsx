@@ -1,37 +1,29 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import Header from './composants/Header'
-import Footer from './composants/Footer'
-import Accueil from './composants/Accueil'
-import Menus from './composants/Menus'
-import Contact from './composants/Contact'
-import DetailsMenu from './composants/DetailsMenu'
+import Header from './composants/Header';
+import Footer from './composants/Footer';
+import Accueil from './composants/Accueil';
+import Menus from './composants/Menus';
+import Contact from './composants/Contact';
+import DetailsMenu from './composants/DetailsMenu';
 
-function AnimatedRoutes() {
+export default function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/menus" element={<Menus />} />
-        <Route path="/menu/:id" element={<DetailsMenu />} />
-      </Routes>
-    </AnimatePresence>
-  );
-}
-
-export default function App() {
-  return (
     <>
       <Header />
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/menus" element={<Menus />} />
-          <Route path="/menus/:id" element={<DetailsMenu />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <div className="main-wrapper">
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/menus" element={<Menus />} />
+            <Route path="/menus/:id" element={<DetailsMenu />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
+      </div>
       <Footer />
     </>
-  )
+  );
 }
