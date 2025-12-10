@@ -1,0 +1,46 @@
+
+.detail-left h1 {
+  font-size: 2.5rem;
+}
+
+.btn-retour {
+  background-color: #ff8c42; 
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.detail-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Lightbox plein écran */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;  /* pleine largeur */
+  height: 100vh; /* pleine hauteur */
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.lightbox-img {
+  width: 60vw;   /* 90% de la largeur de la fenêtre */
+  height: auto;  /* conserver les proportions */
+  max-height: 95vh; /* ne pas dépasser la hauteur de l'écran */
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  object-fit: contain;
+}

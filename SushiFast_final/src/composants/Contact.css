@@ -1,0 +1,37 @@
+.contact-page h2 {
+  color: #FF7F50;
+  font-weight: 700;
+}
+
+.team-member img {
+  object-fit: cover;
+  border: 3px solid #FF7F50;
+}
+
+.social-links a {
+  color: #FF7F50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  border: 2px solid #FF7F50;
+  color: white;
+}
+
+.contact-form .btn-warning {
+  background-color: #FF7F50;
+  color: white;
+  border: none;
+}
+
+.contact-form .btn-warning:hover {
+  background-color: #ff641f;
+}
+
+.social-links a:hover i {
+  color: #ff641f !important;
+  transform: scale(1.2) !important;
+  transition: 0.3s;
+}
+

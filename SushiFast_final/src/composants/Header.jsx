@@ -17,9 +17,10 @@ export default function Header() {
           <NavLink to="/menus" className="nav-item">
             Menus
           </NavLink>
-          <NavLink to="/filtres" className="nav-item">
-            Filtres
+          <NavLink to="/contact" className="nav-item">
+            Contact
           </NavLink>
+          
         </div>
       </div>
     </nav>

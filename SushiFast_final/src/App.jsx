@@ -4,7 +4,7 @@ import Header from './composants/Header'
 import Footer from './composants/Footer'
 import Accueil from './composants/Accueil'
 import Menus from './composants/Menus'
-import FiltresMenus from './composants/FiltresMenus'
+import Contact from './composants/Contact'
 import DetailsMenu from './composants/DetailsMenu'
 
 function AnimatedRoutes() {
@@ -29,8 +29,9 @@ export default function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/menus" element={<Menus />} />
           <Route path="/menus/:id" element={<DetailsMenu />} />
-          <Route path="/filtres" element={<FiltresMenus />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+      <Footer />
     </>
   )
 }

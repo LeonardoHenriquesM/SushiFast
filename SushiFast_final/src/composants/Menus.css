@@ -1,3 +1,5 @@
+
+
 .menus-row {
   display: flex;
   flex-wrap: wrap;
@@ -38,4 +40,60 @@
   background-color: #ff7a1f;
   color: white;
   box-shadow: 0 6px 14px rgba(255, 140, 66, 0.4);
+}
+
+/* Slider prix */
+.form-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ffdab1; /* couleur track */
+  outline: none;
+  transition: background 0.3s;
+}
+
+.form-range:hover {
+  background: #ffc27a;
+}
+
+/* Thumb du slider */
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff8c42;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-range::-webkit-slider-thumb:hover {
+  background: #ff7a1f;
+  transform: scale(1.1);
+}
+
+/* Pour Firefox */
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff8c42;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-range::-moz-range-thumb:hover {
+  background: #ff7a1f;
+  transform: scale(1.1);
+}
+
+/* Track pour Firefox */
+.form-range::-moz-range-track {
+  background: #ffdab1;
+  height: 8px;
+  border-radius: 5px;
 }
