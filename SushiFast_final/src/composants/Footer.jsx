@@ -37,7 +37,7 @@ export default function Footer() {
 
       {/* Bas de page / copyright */}
       <div className="text-center text-white mt-4">
-        &copy; {new Date().getFullYear()} SushiFast. Tous droits réservés.
+        <p>Développé par Leonardo Henriques et Thylia Brouillard</p>
       </div>
     </footer>
   );

@@ -6,10 +6,10 @@ export default function Accueil() {
   return (
     <motion.div
       className="accueil"
-      initial={{ opacity: 0, y: 30 }}       // état initial
-      animate={{ opacity: 1, y: 0 }}       // animation entrée
-      exit={{ opacity: 0, y: -30 }}        // animation sortie
-      transition={{ duration: 0.4 }}       // durée de l'animation
+      initial={{ opacity: 0, y: 30 }}       
+      animate={{ opacity: 1, y: 0 }}       
+      exit={{ opacity: 0, y: -30 }}        
+      transition={{ duration: 0.4 }}       
     >
     <div className="accueil">
 

@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { useState } from "react";
 import Header from './composants/Header';
 import Footer from './composants/Footer';
 import Accueil from './composants/Accueil';

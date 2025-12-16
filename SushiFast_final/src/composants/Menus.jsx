@@ -229,7 +229,6 @@ export default function Menus() {
       </div>
 
       {/* BOUTON SCROLL TOP */}
-      {showScroll && (
         <button
           className={`scroll-top-btn ${showScroll ? "show" : ""}`}
           onClick={scrollTop}
@@ -237,7 +236,6 @@ export default function Menus() {
         >
           ↑
         </button>
-      )}
 
       {/* MODAL PANIER */}
       <div className="modal fade" id="cartModal" tabIndex="-1">

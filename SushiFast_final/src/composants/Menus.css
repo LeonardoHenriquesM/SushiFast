@@ -79,23 +79,27 @@
   position: fixed;
   bottom: 40px;
   right: 40px;
+  width: 56px;
+  height: 56px;
   background-color: #ff8c42;
   color: white;
   border: none;
-  padding: 16px;
-  border-radius: 50%; /* rond parfait */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 24px;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 1000;
-  opacity: 0;           /* invisible par défaut */
-  pointer-events: none;  /* pas cliquable tant que invisible */
-  transition: opacity 1s ease; /* fade-in / fade-out */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
 }
 
 .scroll-top-btn.show {
   opacity: 1;
-  pointer-events: auto; /* cliquable quand visible */
+  pointer-events: auto; 
 }
 
 .scroll-top-btn:hover {
